@@ -8,10 +8,10 @@
 </head>
 <body>
   <%= yield %>
-  <script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="/javascripts/jquery.backstretch.min.js"></script>
-  <script type="text/javascript">
-    $.backstretch("/images/mallory.jpg");
+  <script src="/javascripts/jquery-1.7.2.min.js"></script>
+  <script src="/javascripts/jquery.backstretch.min.js"></script>
+  <script>
+    $.backstretch("/images/mallory.jpg", {speed: 1000});
   </script>
 </body>
 </html>

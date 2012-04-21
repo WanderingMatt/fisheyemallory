@@ -1,0 +1,14 @@
+$default-font-family: "Helvetica Neue", Arial, sans-serif;
+$default-font-size: 16px;
+$default-line-height: 30px;
+
+@font-face {
+  font-family: 'Chunk Five';
+  src: url('/fonts/Chunkfive-webfont.eot');
+  src: url('/fonts/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Chunkfive-webfont.woff') format('woff'),
+       url('/fonts/Chunkfive-webfont.ttf') format('truetype'),
+       url('/fonts/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

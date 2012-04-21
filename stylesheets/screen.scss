@@ -1,7 +1,3 @@
-//
-// Application Stylesheet
-//
-
-@import "partials/base";
-@import "partials/content";
-@import "partials/layout";
+@import "compass";
+@include global-reset;
+@include reset-html5;

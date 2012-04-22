@@ -29,6 +29,8 @@ if ENV['RACK_ENV'] != 'production'
 end
 
 # Other Rack Middleware
+use Rack::ConditionalGet # 304 on refreshes!
+use Rack::ETag, nil, 'public, max-age=600' # ETags and Varnish Caching
 use Rack::ShowStatus      # Nice looking 404s and other messages
 use Rack::ShowExceptions  # Nice looking errors
 

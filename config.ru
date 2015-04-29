@@ -1,8 +1,12 @@
+require 'newrelic_rpm'
+
 use Rack::ConditionalGet
 use Rack::ETag
 use Rack::Static,
   :urls => ["/fonts", "/images", "/javascripts", "/stylesheets", "/favicon.ico", "/robots.txt"],
   :root => "public"
+
+NewRelic::Agent.manual_start
 
 run lambda { |env|
   [
